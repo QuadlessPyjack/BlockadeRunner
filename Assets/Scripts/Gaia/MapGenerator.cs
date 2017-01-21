@@ -11,7 +11,7 @@ namespace Assets.Scripts.Gaia
     class MapGenerator : MonoBehaviour
     {
         public Vector2 m_mapSize = new Vector2(100, 100);
-        public List<string> m_supportedBiomes = new List<string>{ "34324", "54545" };
+        public List<string> m_supportedBiomes = new List<string>{ "Desert_Flat", "Desert_Hills", "Desert_Canyon" };
 
         private string BIOME_SETTINGS_PATH       = "//Config//BiomeSettings.ini";
         private string DECORATIONS_SETTINGS_PATH = "//Config//Decorations.ini";
@@ -48,6 +48,7 @@ namespace Assets.Scripts.Gaia
         private void Start()
         {
             initSettings();
+
 
         }
     }
