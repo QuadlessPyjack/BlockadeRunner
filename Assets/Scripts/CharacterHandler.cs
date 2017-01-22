@@ -25,8 +25,8 @@ public class CharacterHandler : MonoBehaviour {
         Debug.Log("HAxis: " + deltaX);
         Debug.Log("VAxis: " + deltaY);
         Vector3 targetRotation = transform.rotation.eulerAngles;
-        transform.Translate(Input.GetAxis("LeftStickX") * stepSize * Time.deltaTime, 0, Input.GetAxis("LeftStickY") * stepSize * Time.deltaTime);
-        transform.Rotate(Input.GetAxis("RightStickY") * Vector3.up * Time.deltaTime * stepSize);
+//        transform.Translate(Input.GetAxis("LeftStickX") * stepSize * Time.deltaTime, 0, Input.GetAxis("LeftStickY") * stepSize * Time.deltaTime);
+  //      transform.Rotate(Input.GetAxis("RightStickY") * Vector3.up * Time.deltaTime * stepSize);
         //if (deltaY != 0)
         //{
         //    targetRotation = new Vector3(transform.rotation.eulerAngles.x, -deltaY, transform.rotation.eulerAngles.z);
