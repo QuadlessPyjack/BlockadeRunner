@@ -17,12 +17,12 @@ public class ZoomSmooth : MonoBehaviour {
 
 		zoomAmount = Camera.main.orthographicSize;
 
-		if (Input.GetAxis("Mouse ScrollWheel") > 0)
+		if (Input.GetAxis("Mouse ScrollWheel") > 0 || Input.GetButton("ZoomIn"))
 		{
 			zoomAmount += zoomStep * (1 / Time.deltaTime);
 		}
 
-		if (Input.GetAxis("Mouse ScrollWheel") < 0)
+		if (Input.GetAxis("Mouse ScrollWheel") < 0 || Input.GetButton("ZoomOut"))
 		{
 			zoomAmount -= zoomStep * (1 / Time.deltaTime);
 		}
